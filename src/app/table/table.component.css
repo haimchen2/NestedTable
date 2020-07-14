@@ -1,0 +1,36 @@
+
+
+
+
+.zui-table {
+   
+    border: solid 3px #DDEEEE;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font: normal 13px Arial, sans-serif;
+} 
+.zui-table thead th {
+    background-color: #DDEFEF;
+    border: solid 1px #DDEEEE;
+    color: #336B6B;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #fff;
+}
+.zui-table tbody td {
+    border: solid 1px #DDEEEE;
+    color: #333;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #fff;
+}
+.aria{  
+ font-weight: bold !important;
+  cursor: pointer !important;}
+.subaria{ padding-right: 23px !important;  font-weight: bold !important;}
+.inner{ padding-right: 12px !important;}
+.centered {
+  position: fixed;
+  top: 20%;
+  left: 40%;
+  margin-top: -50px;
+  margin-left: -100px;
+}

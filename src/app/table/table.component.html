@@ -1,0 +1,30 @@
+<table class="centered zui-table table table-hover table-bordered table-responsive-xl">
+	<thead>
+    	<th> תחום </th>
+		<th> סלולר </th>
+		<th> אימייל </th>
+		<th> כספת </th>
+	</thead>
+
+	<tbody>
+
+<ng-container *ngFor="let data of data1">  
+
+  <tr >
+    <td (click)="data.expanded = !data.expanded" class="aria">  {{(data.expanded ? ' - ':' + ')+  data.aria}}  </td>  
+   <td> {{data.phone}} </td>
+    <td> {{data.email}} </td>
+    <td> {{data.safebox}} </td>
+  </tr>
+
+  <ng-container *ngIf="data.expanded">
+    <tr *ngFor="let i of findDetails(data)">
+      <td class="subaria">{{i.datades.subaria}}</td>
+    <td class="inner"> {{i.datades.phone}} </td>
+       <td class="inner"> {{i.datades.email}} </td>
+      <td class="inner"> {{i.datades.safebox}} </td>
+    </tr>
+  </ng-container>
+</ng-container>
+	</tbody>
+</table>
